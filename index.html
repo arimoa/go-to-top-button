@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+    <div id="div5">div5</div>
+    <div id="div6">div6</div>
+    <span class="material-icons" id="ari">arrow_upward</span>
+
+    <script>
+        
+        var butt=document.getElementById("ari");
+        window.addEventListener("scroll",myfun);
+        function myfun() {
+            if (window.pageYOffset>100) {
+                butt.style.display="inline-block";
+            } else {
+                butt.style.display="none";
+            }
+            
+        }
+        butt.addEventListener("click",myfun1);
+        function myfun1() {
+            scrollTo(0,0);
+        }
+    </script>
+</body>
+</html>
